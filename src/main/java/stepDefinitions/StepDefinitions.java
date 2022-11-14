@@ -49,8 +49,10 @@ public class StepDefinitions extends Utils{
 			Response = Request.when().post(getResource.getResource()); // Response 
 		} else if(HttpMethod.equalsIgnoreCase("GET")) {
 			Response = Request.when().get(getResource.getResource()); // Response 
-			
+		}else if(HttpMethod.equalsIgnoreCase("PUT")) {
+			Response = Request.when().put(getResource.getResource()); // Response 
 		}
+		
 		System.out.println(getResource.getResource()); 
 		
 	    
@@ -64,9 +66,9 @@ public class StepDefinitions extends Utils{
 	}
 	
 	@Then("{string} in response body is {string}")
-	public void in_response_body_is(String parm, String parmval) {   
+	public void in_response_body_is(String param, String paramval) {   
 	
-		assertEquals(GetjsonPath(Response, parm),parmval);
+		assertEquals(GetjsonPath(Response, param),paramval);
 
 	}
 	
@@ -84,6 +86,15 @@ public class StepDefinitions extends Utils{
 		assertEquals(GetjsonPath(Response, "name"),Expname);
 		
 	}
+	
+	@Given("Add the address details need to be updates {string} for the UpdatePlace request")
+	public void add_the_address_details_need_to_be_updates_for_the_update_place_request(String Address) throws IOException {
+		
+		Request = given().spec(RequestSpecification()).
+				body(testDataObj.UpdatePlaceTestdata(place_id,Address));
+	   
+	}
+	
 	
 	@Given("Add the Payload for the DeletePlace request")
 	public void add_the_payload_for_the_DeletePlace_request() throws IOException {

@@ -27,7 +27,7 @@ Body:
     "language": "English"
 }
 HTTP/1.1 200 OK
-Date: Sun, 13 Nov 2022 16:15:52 GMT
+Date: Mon, 14 Nov 2022 14:19:42 GMT
 Server: Apache/2.4.41 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,17 +40,17 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "75087a10127bb61544949e6dfb1045a9",
+    "place_id": "7ebcdd32417e8cb9c8f2c095e5b5ba87",
     "scope": "APP",
-    "reference": "6a2a6bf02f1c251f25d97e966b65dbad6a2a6bf02f1c251f25d97e966b65dbad",
-    "id": "6a2a6bf02f1c251f25d97e966b65dbad"
+    "reference": "85abf867fbf3c68142d0f21f5dd8c6ba85abf867fbf3c68142d0f21f5dd8c6ba",
+    "id": "85abf867fbf3c68142d0f21f5dd8c6ba"
 }
 Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=75087a10127bb61544949e6dfb1045a9
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=7ebcdd32417e8cb9c8f2c095e5b5ba87
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
-				place_id=75087a10127bb61544949e6dfb1045a9
+				place_id=7ebcdd32417e8cb9c8f2c095e5b5ba87
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -59,7 +59,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Sun, 13 Nov 2022 16:15:53 GMT
+Date: Mon, 14 Nov 2022 14:19:43 GMT
 Server: Apache/2.4.41 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -83,6 +83,38 @@ Content-Type: application/json;charset=UTF-8
     "website": "http://google.com",
     "language": "English"
 }
+Request method:	PUT
+Request URI:	https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id": "7ebcdd32417e8cb9c8f2c095e5b5ba87",
+    "address": "Hyper Street",
+    "key": "qaclick123"
+}
+HTTP/1.1 200 OK
+Date: Mon, 14 Nov 2022 14:19:44 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 38
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "msg": "Address successfully updated"
+}
 Request method:	POST
 Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
 Proxy:			<none>
@@ -96,10 +128,10 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "place_id": "75087a10127bb61544949e6dfb1045a9"
+    "place_id": "7ebcdd32417e8cb9c8f2c095e5b5ba87"
 }
 HTTP/1.1 200 OK
-Date: Sun, 13 Nov 2022 16:15:54 GMT
+Date: Mon, 14 Nov 2022 14:19:44 GMT
 Server: Apache/2.4.41 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST

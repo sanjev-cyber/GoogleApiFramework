@@ -46,4 +46,14 @@ public class TestData {
 				+ "}\r\n"
 				+ "";
 	}
+	
+	
+	public String UpdatePlaceTestdata(String placeId,String Address) {
+		
+		return "{\r\n"
+				+ "\"place_id\":\""+placeId+"\",\r\n"
+				+ "\"address\":\""+Address+"\",\r\n"
+				+ "\"key\":\"qaclick123\"\r\n"
+				+ "}";
+	}
 }
